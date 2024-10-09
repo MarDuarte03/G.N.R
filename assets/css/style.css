@@ -252,7 +252,7 @@ display: inline-flex;
 
 .loader:hover {
   cursor: pointer;
-  background-color: lightgray;
+  background-color: var(--primary-dark);
 }
 
 .currentplaying {
@@ -385,4 +385,11 @@ border-radius: 13px;
   color: rgb(255, 255, 255);
   color: white;
   transform: rotateY(180deg);
+}
+
+
+.letras {
+border: none;
+background: none;
+cursor: pointer;
 }
