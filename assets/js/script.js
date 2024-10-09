@@ -18,12 +18,12 @@ var usuarios = [
 ];
 
 function InicioSesion() {
-    var mail = document.getElementById("mail").value;
+    var nombre = document.getElementById("nombre").value;
     var contraseña = document.getElementById("contraseña").value;
 
 
     for (let index = 0; index < usuarios.length; index++) {
-        if (usuarios[index].mail === mail && usuarios[index].contraseña === contraseña) {
+        if (usuarios[index].nombre === nombre && usuarios[index].contraseña === contraseña) {
             if (usuarios[index].rol == 1) {
 
 
