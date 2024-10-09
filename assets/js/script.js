@@ -1,5 +1,4 @@
 
-
 //AJAX//
 function loadPage(pageUrl){
     fetch(pageUrl)
