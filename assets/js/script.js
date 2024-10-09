@@ -39,7 +39,6 @@ function letras(cancion) {
             console.log(data);
             contenedor = document.getElementById("lyricsSong");
             contenedor.innerHTML = data.lyrics;
-            
         })
         .catch(error => console.error('Error:', error));
 
