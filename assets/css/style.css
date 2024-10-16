@@ -393,3 +393,24 @@ border: none;
 background: none;
 cursor: pointer;
 }
+
+
+/*lista*/
+
+.comunidad{
+  display: flex;
+  justify-content:center;
+  background: red;
+
+}
+
+.informacion1{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.textoComu{
+  display: flex;
+  justify-content: center;
+}
