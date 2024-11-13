@@ -13,13 +13,18 @@
 }
 
 body{
-  background: #000;
-  color: white;
+  background: light-dark(#fff, #000);
+  color: light-dark(#000,#fff);
   font-family: Arial, Helvetica, sans-serif;
 }
-
+@media(prefers-color-scheme: dark){
+  body{
+    background-color: black;
+    color: white;
+  }
+}
 .color{
-background-color: #DEA412;
+background-color: light-dark(#fac43d,#DEA412);
 width: 100%;
 padding: 90px;
 }
@@ -135,6 +140,11 @@ z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: center;  
+}
+@media (max-width: 480px){
+  .img-aa{
+    max-width: 100%;
+  }
 }
 
 .gnr{
@@ -445,7 +455,7 @@ cursor: pointer;
   color: var(--white);
 }
 
-/* Contenedor de aviso de cookies */
+
 .cookie-banner {
   position: fixed;
   bottom: 0;
@@ -458,7 +468,7 @@ cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1001; /* Coloca el aviso encima de la superposición */
+  z-index: 1001; 
 }
 
 .cookie-banner p {
@@ -499,13 +509,14 @@ cursor: pointer;
   padding: 10px 20px;
   margin-top: 10px;
   cursor: pointer;
-  background-color: #4CAF50;
+  background-color: var(--primary-dark);
   color: white;
   border: none;
+  border-radius: 15px;
 }
 
 #lyricsResult {
   margin-top: 20px;
   text-align: left;
-  white-space: pre-wrap; /* Permite mostrar saltos de línea en las letras */
+  white-space: pre-wrap;
 }
