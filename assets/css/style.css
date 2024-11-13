@@ -336,7 +336,10 @@ display: inline-flex;
   height: 170px;
   perspective: 1000px;
   padding: 20px;
+
 }
+
+
 
 .title {
   font-size: 15px;
@@ -363,7 +366,7 @@ border-radius: 13px;
 }
 
 .flip-card-front, .flip-card-back {
-  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -376,12 +379,10 @@ border-radius: 13px;
 }
 
 .flip-card-front {
-  background: linear-gradient(120deg, var(--bg), rgba(0, 0, 0, 0.99) 88%, var(--primary) 48%);
   color: rgb(255, 255, 255);
 }
 
 .flip-card-back {
-  background: linear-gradient(120deg, var(--primary), rgba(0, 0, 0, 0.99) 100%, var(--bg) 48%);
   color: rgb(255, 255, 255);
   color: white;
   transform: rotateY(180deg);
@@ -394,26 +395,6 @@ background: none;
 cursor: pointer;
 }
 
-
-/*lista*/
-
-.comunidad{
-  display: flex;
-  justify-content:center;
-  background: red;
-
-}
-
-.informacion1{
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
-
-.textoComu{
-  display: flex;
-  justify-content: center;
-}
 
 
 
