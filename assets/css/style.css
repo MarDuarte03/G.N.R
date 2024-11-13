@@ -23,6 +23,17 @@ body{
     color: white;
   }
 }
+
+@media (max-width: 480px){
+  
+  p{
+    max-width: 50%;
+  }
+  h1{
+    max-width: 50%;
+  }
+}
+
 .color{
 background-color: light-dark(#fac43d,#DEA412);
 width: 100%;
