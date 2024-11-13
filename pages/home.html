@@ -101,6 +101,17 @@
     <p>*Pulsa los botones para cargar los álbumes.*</p>
   </div>
 
+  <div class="contenido-letras">
+  <div class="lyrics-search">
+    <h2>Buscar Letra de Canción</h2>
+    <form id="lyricsForm">
+      <input type="text" id="artist" placeholder="Artista" required>
+      <input type="text" id="song" placeholder="Canción" required>
+      <button type="submit">Buscar</button>
+    </form>
+    <div id="lyricsResult"></div>
+  </div>
+</div>
 
 <div id="popup" class="popup">
     <div class="popup-content">
@@ -121,11 +132,15 @@
     </div>
 </div>
 
- <!-- Aviso de Cookies -->
- <div class="cookie-banner" id="cookieBanner">
-  <p>Utilizamos cookies para mejorar la experiencia. ¿Aceptas el uso de cookies?</p>
-  <button id="acceptCookies">Aceptar</button>
-</div>
+
+  <!-- Superposición de fondo para pausar la pantalla -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Aviso de Cookies -->
+  <div class="cookie-banner" id="cookieBanner">
+    <p>Utilizamos cookies para mejorar la experiencia. ¿Aceptas el uso de cookies?</p>
+    <button id="acceptCookies">Aceptar</button>
+  </div>
 
 
 

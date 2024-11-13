@@ -458,6 +458,7 @@ cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1001; /* Coloca el aviso encima de la superposición */
 }
 
 .cookie-banner p {
@@ -470,4 +471,41 @@ cursor: pointer;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+}
+
+.contenido-letras{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.lyrics-search {
+  text-align: center;
+  width: 300px;
+  justify-content: center;
+}
+
+.lyrics-search h2 {
+  margin-bottom: 20px;
+}
+
+.lyrics-search input {
+  width: 90%;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.lyrics-search button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+#lyricsResult {
+  margin-top: 20px;
+  text-align: left;
+  white-space: pre-wrap; /* Permite mostrar saltos de línea en las letras */
 }
